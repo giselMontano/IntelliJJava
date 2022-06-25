@@ -1,0 +1,44 @@
+
+There are three types of variables in java/LOCAL= inside block of code/INSTANCE= inside of class/ STATIC= across objects, block of codes, class.
+
+LOCAL VARIABLES:
+    -Are the variables which are created  inside a block of code{} like method,
+    loop, switch statement, if else condition or a constructor.
+    -Created as soon as java enter to block of code and destroy as soon as java leave the bock of code.
+Advantage:
+    -We should always prefer local variables, as soon as we are done using it inside a block of code it will be destroyed automatically.
+    -Short period of time inside the RAM, temporary variables.
+DisAdvantages:
+    -It can not be access outside the block.
+Example:
+   Class Countries{
+   void USA(){
+   String person= "Elisa"
+   }
+   void Russia (){
+   System.out.println(person)//ERROR-->Can not be access because this variable belongs to Usa, is inside the USA {}block of code.
+   }
+   }
+
+
+INSTANCE VARIABLES:
+      -These are outside the method or block of code{}, but inside class{
+Advantages:
+      -Accessible everywhere in a class in all the blocks of codes inside the class, but not in static method.
+DisAdvantages:
+      -They keep on occupying the memory for longer periods of time.
+
+STATIC VARIABLE:
+       -If we have a instance variable with a static keyword then it is called as static variable.
+       -ONLY ONE VALUE AT THE TIME, IT CAN BE UPDATE EVERYTIME. only use if we know in advance that the value will stay the same, or we will need the update value.
+       -When a value stays the same for all the objects of the class we should always go for static in order to save memory. Example; 4 legs for a dog.<--This will not change.
+        ONLY ONE IS KEPT INSIDE LAST ONE YOU UPDATED!! Example:president= It will  change, keeping just the last update and sharing this updated value without occupying extra space.
+       -Can not be local.
+       -If one variable change all the objects of the class are affected because of the common location.
+       -One memory location.
+Advantages:
+      -They have the highest scope available even outside an object.
+      -These are class level variables that is why it does not matter how many objects are created from that class only one variable is created.
+DisAdvantages:
+      -These occupy the memory for longer period of time even more that instance variables.
+      -These can hold only a single value for all the objects.

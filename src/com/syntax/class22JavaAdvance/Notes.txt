@@ -1,0 +1,47 @@
+WHAT IS METHOD OVERLOADING IN JAVA:
+     With the help of method overloading we can have many methods with same name but
+     different parameters in a class.
+WHY WE SHOULD USE METHOD OVERLOADING:
+     1)Cleaner code if multiple methods are doing the same thing we do not need to come
+     up with different names.
+     2)Flexibility for MethodOverloading in java.
+HOW WE CAN USE METHOD OVERLOADING IN JAVA:
+      We can overload a method by changing three things.
+      1) Number of parameters
+      2) Change the data type of parameters
+      3) We can also change the sequence of parameters.
+
+class Calculator{
+
+double method(double num1, int num2, int num3){
+return num1+num2+m3;
+}
+}
+
+RULES:
+    1)Method name should be the same but parameters should be different.
+    2)We can not overload a method by just changing its return type.
+    3)We can not overload a method by just changing its accessibility like private, public, etc.
+    4)We can also overload constructor by fallowing the same rules.
+
+======================================================================================================
+WHAT IS METHOD OVERRIDING:
+   Happens when same method exist inside the parent class and the child class.
+WHY WE SHOULD OVERRIDE A METHOD:
+   If we are inheriting from a Parent class and we do not like the implementation
+   of a method from the parent class we can provide our own implementation.
+   Sometimes it's done to improve the performance of code.
+HOW WE CAN OVERRIDE A METHOD:
+   When we inherit from a class we just need to rewrite that method inside the child class.
+   We can only override the body.
+   All should be the same except the body and access modifiers.
+
+RULES:
+   1) For Overwrite we must inherit from a class
+   2) The method in the parent class that we want to override must be exactly the same as method
+   in The child class only the access modify can be different
+   3) The access modifiers in the child class can only be increased with respect to the visibility
+   for example we can change default to protected ot to public, but we can not make it private.
+   4) If something is not inherited we can not override it for example private methods and constructors.
+   5) CHILD CLASS CAN NOT BE MORE RESTRICTED.
+

@@ -1,0 +1,60 @@
+WHAT IS SUPER KEYWORD:
+    Super keyword in java is used to refer to the parent class object.
+    Is use only when a constructor is present in a parent class
+    to call this constructor inside a child class we use super keyword.
+WHY SHOULD WE LEARN SUPER KEYWORD:
+    1) If we have same name variable or method in the super/parent/base class then we
+    can use the super keyword to refer to parent class variable or method because by default java
+    prefer the variable of child class. We can also call the super class constructor
+    with the help of super with parenthesis super();
+HOW TO USE SUPER KEYWORD:
+    1)We can use super. method name or field name to call the method or to access the field of  super class.
+    2)Use the super with parenthesis to call the super class constructor.
+Rules:
+    1)We can only access the immediate parent class constructor or field or method with the help of super keyword.
+    2)We can only use supe(); inside a constructor.
+    3)When we have a constructor in parent class you must have a constructor in child class as well
+     in order to use the extend keyword. All the fields must be linked. otherwise you'll get an ERROR.
+     If you have more than one constructor in parent class you must at least create a constructor in child class
+     that matches one of the constructors in parent class does not matter the size does not have to be the  bigger one.
+    4)If we have a user created constructor in the parent class we must have a matching parameter
+     constructor inside the child classes as well.
+    5)super() should be the first line inside a constructor after creating a child class.
+    6)IF YOU HAVE MULTIPLE CONSTRUCTOR IN PARENT CLASS YOU MUST CREATE AT LEAST ONE MATCHING CONSTRUCTOR INSIDE CHILD CLASS AS WELL
+    IT CAN ALSO BE A EMPTY CONSTRUCTOR=> userInfo(){}
+
+ Once you have created a constructor java will no longer provide a default constructor.
+
+
+ ==================================================================================================
+ WHAT IS METHOD OVER LOADING:
+ CHEK POINTS
+ 1)Name should match
+ 2)Parameters should match
+ 3)Data type should match in the same order/sequence.
+
+ *SAME RULES AS CONSTRUCTORS
+ WE CAN HAVE MORE THAN ONE METHOD WITH SAME PARAMETERS
+ BUT IT MUST HAVE DIFFERENT DATA TYPE OR DIFFERENT SEQUENCE CHECK (Class MethodOverloanding) FOR BETTER UNDERSTANDING.
+
+    When same name method exist in a class but with different number of parameters, different data type
+    and different sequence of parameters it is called MethodOverloanding.
+    You must have different parameters so java knows which methods you are referring to.
+
+ WHY WE SHOULD USE MethodOverloanding:
+   1)Makes your code more redable.
+   2)Makes the life of the end users easy they do not have to memorize many method names.
+
+ HOW CAN WE USE  MethodOverloanding:
+         We can have same name methods but we have to fallow the bellow rules.
+         1) By passing different number of parameters.
+         2) We can change the datatype of parameters.
+         3) We can also overload a method by changing the sequence of parameters.
+ ===================================================================================================
+ VERY VERY IMPORTANT!!!!
+ arrays
+ loops + nested loops
+ if else constructor
+ classes objects
+ methods
+ string class

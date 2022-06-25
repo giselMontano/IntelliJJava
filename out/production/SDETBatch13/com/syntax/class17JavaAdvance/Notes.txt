@@ -1,0 +1,42 @@
+ACCESS MODIFIERS:
+   Access modifiers are keywords in Java that help us controls the access of
+   *classes, variables, methods and other code of block.
+   There are four access levels in Java
+  -private-->most restricted
+  -default(it's not a keyword)-->not  keyword
+  -protected
+  -public.
+  We have three keywords that define these access levels
+  1) private
+  2) protected
+  3) public.
+PRIVATE:
+    When we use the private keyword with a method or field it is only accessible inside that class.
+    it is the most restricted access modifier.
+    *We should make the methods private but not the class.
+DEFAULT(its not a keyword):
+    when we don't use any access modifier keyword with a field or a method then default access is applied
+    by java which means.
+    We can access this variable or method:
+    *inside the same class as well as in all the other classes which exists inside the same package.
+    *CAN NOT BE ACCESS IN ANOTHER PACKAGE
+PROTECTED:
+    When we have protected access modifier.
+    We can access that method or variable:
+    *inside the same class
+    *inside the other classes which are inside the same package
+    *inside the classes which are in different packages as well
+    **but they must have extends relationship with the original class.
+PUBLIC:
+    When we use the public access modifiers we can use that field or method anywhere inside
+    the same project.
+    We can access them:
+     *in the class
+     *in the package
+     *in other packages
+     *in the project.
+    ->It is accessible anywhere across the project.
+IMPORT KEYWORD:
+     WE CAN ONLY IMPORT CLASSES NOT INDIVIDUAL FIELDS
+     WHEN TRYING TO USE FIELDS FROM ANOTHER CLASS FROM DIFFERENT PACKAGE, IMPORTING THAT CLASS IS A MUST
+     This must be done when trying to access a class from a different package.
